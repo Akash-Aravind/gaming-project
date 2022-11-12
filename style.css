@@ -1,0 +1,542 @@
+.light {
+    --text-color-default: #f0f8ff;
+    --hover-yellow: yellow;
+    --box-red: red;
+    --plain-text-color: black;
+    --card-bg: white;
+    --button-bg: ;
+    --bord: orange;
+
+}
+
+.dark {
+    --text-color-default: black;
+    --hover-yellow: yellow;
+    --box-red: red;
+    --plain-text-color: aliceblue;
+    --card-bg: #363636;
+    --button-bg: #191b1d;
+    --bord: greenyellow;
+}
+
+
+
+
+body {
+    background-color: var(--text-color-default);
+}
+
+body h4 {
+    color: var(--plain-text-color);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-family: 'Russo One', sans-serif;
+    border: none;
+    transition: all 0.3s;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.quote {
+    margin: 50px;
+    font-size: 30px;
+    z-index: 2;
+}
+
+.poster {
+    display: inline;
+    width: 300px;
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: none;
+    margin: 18px;
+    color: var(--plain-text-color);
+
+}
+
+.card-body {
+    background-color: var(--card-bg);
+
+}
+
+
+.navbar {
+    color: white;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1
+}
+
+#searchbtn {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    padding: 2px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+#searchbtn:hover {
+    border: none;
+    color: var(--hover-yellow);
+    box-shadow: inset 90px 0 0 0 var(--box-red);
+    transition: all 0.3s;
+
+}
+
+#searchtext {
+    border: none;
+    width: 156px;
+    position: absolute;
+    right: 100px;
+    top: 0;
+    margin: 10px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#searchtext:hover {
+    background-color: rgb(185, 180, 180);
+
+}
+
+
+.top-rated,
+.genre-adventure,
+.genre-shooter,
+.genre-action,
+.genre-rpg,
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: block;
+}
+
+
+.card:hover {
+    box-shadow: 2px 2px 3px 3px;
+}
+
+.btn {
+    border: none;
+
+}
+
+.btn:hover {
+    color: var(--hover-yellow);
+    box-shadow: inset 131px 0 0 0 #191b1d;
+    ;
+}
+
+
+
+
+
+.back-btn {
+    width: 45px;
+    height: 45px;
+    z-index: 25;
+    position: absolute;
+    top: 0px;
+    margin: 10px;
+}
+
+
+
+.index-title {
+    color: var(--plain-text-color);
+    margin-left: 139px;
+    padding-bottom: 3px;
+    border-bottom: 4px solid var(--text-color-default);
+    max-width: fit-content;
+}
+
+
+
+.index-title:hover {
+    border-bottom: 4px solid var(--bord);
+}
+
+
+.drop-down {
+    position: absolute;
+    z-index: 27;
+    margin: 22px;
+    padding: 7.5px;
+    border-radius: 7px;
+    background-color: var(--bord);
+    ;
+}
+
+option {
+    background-color: white;
+}
+
+option:hover {
+    background-color: rgb(185, 180, 180);
+}
+
+
+.drop-down:hover {
+    background-color: rgba(172, 255, 47, 0.724);
+}
+
+.navbar2 {
+    position: relative;
+    min-height: 70px;
+    width: 100%;
+}
+
+.darkmode {
+    color: var(--plain-text-color);
+    position: absolute;
+    margin: 20px;
+    right: 0%;
+    display: inline;
+}
+
+.box {
+    width: 40px;
+}
+
+.slider {
+    width: 20px;
+}
+
+
+
+.finally {
+    margin: 0;
+    background-color: var(--text-color-default);
+}
+
+
+
+.png {
+    width: 40px;
+    height: 40px;
+    transform: translate(0px, -2px);
+}
+
+.footer-cont {
+    display: flex;
+    background-color: #363636;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+
+.icon {
+    color: #f0f8ff;
+    text-decoration: none;
+}
+
+.icons {
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons a {
+    padding: 27px;
+}
+
+.icon:hover {
+    color: black;
+}
+
+
+
+i:hover {
+    color: black;
+}
+
+
+
+
+/* details page */
+.detail-container {
+    border: 2px solid #424242;
+    min-width: 87.5%;
+    max-width: 87.5%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    color: var(--plain-text-color);
+}
+
+#poste {
+    width: 750px;
+    height: 600px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.detail-container h2 {
+    padding: 20px;
+    display: block;
+    margin-left: 37px;
+
+}
+
+.detail-container h4 {
+    padding-left: 20px;
+    display: block;
+    margin-left: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.detail-container h3 {
+    padding-left: 20px;
+    display: block;
+    margin-left: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.titl {
+    display: block;
+    margin-left: 37px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.detail-container p {
+    text-indent: 2cm;
+    padding-left: 20px;
+    display: block;
+    margin-left: 37px;
+    padding-right: 20px;
+}
+
+.detail-container ul {
+    padding-left: 20px;
+    display: block;
+    margin-left: 85px;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES FOR MOBILE */
+@media only screen and (max-width:700px) {
+    .quote {
+        font-size: medium;
+        transform: translate(0, 30px);
+    }
+
+    .drop-down,
+    .darkmode {
+        font-size: smaller;
+    }
+
+    .index-title {
+        margin-top: 10px;
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .top-rated,
+    .genre-adventure,
+    .genre-shooter,
+    .genre-action,
+    .genre-rpg,
+    .container {
+        margin: auto;
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #poste {
+        display: flex;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+
+    .container {
+        transform: translate(0px, 40px);
+    }
+
+    .detail-container h2,
+    .detail-container h3,
+    .detail-container h4,
+    .detail-container h5,
+    .detail-container h6,
+    .detail-container p,
+    .detail-container ul {
+        margin-left: 0px;
+    }
+
+    .detail-container ul {
+        max-width: fit-content;
+        transform: translate(15%, 0px);
+    }
+
+    .detail-container p {
+        text-indent: 1.5cm;
+    }
+
+    footer {
+        transform: translate(0px, 40px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES FOR TAB */
+@media only screen and (max-width:1295px) {
+
+    * {
+        border: 1px solid red;
+    }
+
+    .quote {
+        font-size: large;
+        transform: translate(0, 30px);
+    }
+
+    .drop-down,
+    .darkmode {
+        font-size: medium;
+    }
+
+    .index-title {
+        margin-top: 10px;
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .top-rated,
+    .genre-adventure,
+    .genre-shooter,
+    .genre-action,
+    .genre-rpg,
+    .container {
+        margin: auto;
+        display: flex;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #poste {
+        display: flex;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+
+    .container {
+        transform: translate(0px, 40px);
+    }
+
+    .detail-container h2,
+    .detail-container h3,
+    .detail-container h4,
+    .detail-container h5,
+    .detail-container h6,
+    .detail-container p,
+    .detail-container ul {
+        margin-left: 0px;
+    }
+
+    .detail-container ul {
+        max-width: fit-content;
+        transform: translate(15%, 0px);
+    }
+
+    .detail-container p {
+        text-indent: 2.5cm;
+    }
+
+    footer {
+        transform: translate(0px, 40px);
+    }
+}
